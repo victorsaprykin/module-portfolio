@@ -263,8 +263,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  padding-top: 320px;
   padding-bottom: 89px;
-  height: 717px;
+  width: max-content;
 }
 
 .contacts__inner a:not(:last-child) {
