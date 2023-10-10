@@ -21,12 +21,12 @@ body {
   max-width: 1180px;
 }
 
-.h2-title {
+.title {
   font-size: 55px;
   letter-spacing: -1.65px;
 }
 
-.h3-title {
+.section-title {
   margin-bottom: 11px;
   font-size: 35px;
   letter-spacing: -1.05px;
@@ -59,11 +59,10 @@ body {
   padding-top: 27px;
   display: flex;
   justify-content: space-between;
-  /*align-items: center;*/
   z-index: 9;
 }
 
-.header-logo {
+.logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,16 +78,16 @@ body {
   color: var(--accent-color);
 }
 
-.header-nav__list {
+.nav__list {
   display: flex;
   gap: 50px;
 }
 
-.header-nav__item {
+.nav__item {
   display: flex;
 }
 
-.header-nav__link {
+.nav__link {
   cursor: pointer;
   font-size: 18px;
   line-height: normal;
@@ -98,7 +97,7 @@ body {
   transition: color 0.3s ease-in-out;
 }
 
-.header-nav__link:hover {
+.nav__link:hover {
   color: var(--accent-color);
 }
 
@@ -133,7 +132,7 @@ body {
   padding-top: 150px;
 }
 
-.project__list {
+.project-list {
   margin-bottom: 80px;
 }
 
@@ -141,28 +140,28 @@ body {
   margin-bottom: 40px;
 }
 
-.projects__item {
+.projects-list__item {
   position: relative;
   height: 550px;
 }
 
-.projects__item img {
+.projects-list__item img {
   border-radius: 33px;
 }
 
-.projects__description {
+.projects-list__description {
   position: absolute;
   bottom: 50px;
   left: 50px;
-  width: max-content;
+  max-width: 500px;
 }
 
-.projects__name {
+.projects-list__name {
   font-size: 35px;
   letter-spacing: -1.05px;
 }
 
-.projects__text {
+.projects-list__text {
   font-size: 30px;
   letter-spacing: -0.9px;
 }
@@ -191,15 +190,15 @@ body {
   margin-bottom: 48px;
 }
 
-.competencies__item {
+.competencies-list__item {
   max-width: 778px;
 }
 
-.competencies__icon {
+.competencies-list__icon {
   margin-bottom: 10px;
 }
 
-.competencies__text {
+.competencies-list__text {
   margin-bottom: 63px;
   font-size: 22px;
   letter-spacing: -0.66px;
@@ -218,18 +217,18 @@ body {
   width: 630px;
 }
 
-.services__item img {
+.services-list__item img {
   border-radius: 30px;
   vertical-align: bottom;
 }
 
-.services__description {
+.services-list__description {
   padding: 40px;
   border-radius: 30px;
   background-color: #191c19;
 }
 
-.services__text {
+.services-list__text {
   width: 724px;
 }
 
@@ -255,34 +254,30 @@ body {
   border-radius: 0 30px 30px 0;
 }
 
-.contacts__content {
-  height: max-content;
-}
-
-.contacts__inner {
+.contacts-content__block {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  align-items: flex-start;
   padding-top: 320px;
   padding-bottom: 89px;
-  width: max-content;
 }
 
-.contacts__inner a:not(:last-child) {
+.contacts-content__block a:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.contacts__title {
+.contacts-content__title {
+  display: inline-block;
   margin-bottom: 28px;
   font-size: 35px;
   letter-spacing: -1.05px;
   line-height: 1;
 }
 
-.contacts__social,
-.contacts__tel,
-.contacts__mail {
-  display: block;
+.contacts-content__social,
+.contacts-content__tel,
+.contacts-content__mail {
+  display: inline-block;
   text-decoration: none;
   color: inherit;
   font-size: 60px;
@@ -291,9 +286,9 @@ body {
   transition: color 0.5s ease-in-out;
 }
 
-.contacts__social:hover,
-.contacts__tel:hover,
-.contacts__mail:hover {
+.contacts-content__social:hover,
+.contacts-content__tel:hover,
+.contacts-content__mail:hover {
   color: var(--accent-color);
 }
 
@@ -307,7 +302,7 @@ body {
   font-family: 'Manrope', sans-serif;
 }
 
-.footer__inner {
+.footer-inner {
   padding-top: 76px;
   padding-bottom: 15px;
   border-radius: 30px 30px 0 0;
@@ -315,14 +310,14 @@ body {
   color: #000;
 }
 
-.footer__title {
+.footer-inner__title {
   margin-bottom: 66px;
   font-size: 22px;
   line-height: normal;
   letter-spacing: -0.66px;
 }
 
-.footer__coperight {
+.footer-inner__coperight {
   font-size: 22px;
   line-height: normal;
   letter-spacing: -0.66px;
